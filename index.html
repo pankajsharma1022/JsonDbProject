@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>Student Login Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Vertical (basic) form</h2>
+<form id="stuForm" method="post">
+<div class="form-group">
+<span><label for="rollId">Roll-No</label> <label id="empIdMsg">
+</label></span>
+<input type="text" class="form-control" onchange='getStu()' name="empId" id="rollno"
+placeholder="Enter Roll-No" required>
+</div>
+<div class="form-group">
+<label for="empName">Full-Name</label>
+<input type="text" class="form-control" id="stuname"
+placeholder="Enter Full Name" name="stuname">
+</div>
+<div class="form-group">
+<label for="empEmail">Class</label>
+<input type="text" class="form-control" id="stuclass"
+placeholder="Enter Class" name="stuclass">
+</div>
+<div class="form-group">
+<label for="empEmail">Birth-Date</label>
+<input type="date" class="form-control" id="stubirth"
+placeholder="Enter Birth-Date" name="stubirth">
+</div>
+
+<div class="form-group">
+<label for="empEmail">Address</label>
+<input type="text" class="form-control" id="stuadd"
+placeholder="Enter Address" name="stuadd">
+</div>
+
+<div class="form-group">
+<label for="empEmail">Enrollment-Date</label>
+<input type="date" class="form-control" id="stuenroll"
+placeholder="Enter Enrollment Date" name="stuenroll">
+</div>
+
+<input type="button" class="btn btn-primary" id="stusave" value="Save"
+onclick="savedata();">
+<input type="button" class="btn btn-primary" id="empSave" value="Change"
+onclick="ChangeData();">
+<input type="button" class="btn btn-primary" id="empSave" value="Reset"
+onclick="resetForm();">
+</form>
+</div>
+<script src=""http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script src="index.JS"></script>
+</body>
+</html>
+
